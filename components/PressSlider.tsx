@@ -34,7 +34,7 @@ export default function PressSlider() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <p className="italic mb-4">"{quote.text}"</p>
+              <p className="italic mb-4">&quot;{quote.text}&quot;</p>
               <div className="flex items-center">
                 <div className="bg-gray-700 w-10 h-10 rounded-full mr-3"></div>
                 <div>
