@@ -6,25 +6,25 @@ const merchItems = [
   {
     id: 1,
     name: 'Coastal Echoes T-Shirt',
-    price: 25,
+    price: 455.69,
     imageUrl: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 2,
     name: 'Limited Edition Vinyl',
-    price: 30,
+    price: 5460.82,
     imageUrl: 'https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 3,
     name: 'Tour Hoodie',
-    price: 45,
+    price: 820.24,
     imageUrl: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   },
   {
     id: 4,
     name: 'Signed Poster',
-    price: 20,
+    price: 364.55,
     imageUrl: 'https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
   }
 ];
@@ -79,7 +79,7 @@ export default function MerchSection() {
             </div>
             <div className="p-4">
               <h3 className="font-bold">{item.name}</h3>
-              <p className="text-cyan-300">${item.price}</p>
+              <p className="text-cyan-300">R{item.price}</p>
             </div>
           </motion.div>
         ))}

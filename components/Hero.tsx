@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+// import ParallaxImage from '@/components/ParallaxImage';
 
 export default function Hero() {
   return (
@@ -13,6 +14,12 @@ export default function Hero() {
         className="object-cover opacity-40"
         priority
       />
+            {/* <ParallaxImage 
+        src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=2100&q=80"
+        alt="Concert background"
+        className="absolute inset-0 opacity-40"
+        speed={0.2}
+      /> */}
       
       {/* Animated Visualizer */}
       <div className="audio-visualizer absolute top-10 w-full">

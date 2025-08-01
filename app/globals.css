@@ -63,3 +63,24 @@ body {
 .bar:nth-child(6) {
   animation-delay: 1s;
 }
+@layer utilities {
+  .will-change-transform {
+    will-change: transform;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+/* Optimize animations */
+*,
+*::before,
+*::after {
+  transform-style: preserve-3d;
+}
+
+/* Add this to the audio visualizer */
+.audio-visualizer {
+  contain: strict;
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import AudioPlayer from "@/components/AudioPlayer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <Header />
       <body className={`${inter.className} bg-black`}>{children}</body>
+      <AudioPlayer />
     </html>
   );
 }
